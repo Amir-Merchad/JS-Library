@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+<div class="bodyContainer">
+    <div class="header">
+        <h1>Library</h1>
+        <button id="showDialog">Add Book +</button>
+    </div>
+
+    <div class="mainBody">
+        <dialog id="bookDialog">
+            <div class="dialogContainer">
+                <form id="bookForm">
+                    <h2>Add New Book</h2>
+                    <input id="Title" type="text" name="Title" placeholder="Title..." required>
+
+                    <input type="text" id="Author" name="Author" placeholder="Author..." required>
+
+                    <input type="number" id="Pages" name="Pages" placeholder="123..." required>
+
+                    <div class="statusContainer">
+                        <label for="Status">have you read it?</label>
+                        <input type="checkbox" name="Status" id="Status" required>
+                    </div>
+
+                    <div class="btnContainer">
+                        <button type="submit" id="AddBookBtn">Add Book</button>
+                        <button type="button" id="closeDialog">Close</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+        <div class="books">
+            <div class="book">
+                <div class="title"></div>
+                <div class="Author"></div>
+                <div class="pages"></div>
+                <div class="buttonContainer">
+                    <button class="changeStatus">Read</button>
+                    <button class="removeBook"> Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">Copy Right © 2025-<a href="https://github.com/Amir-Merchad" class="mygithub">Amir Merchad</a><img
+            id="githubImg" height="25px" src="./images/github-mark.png" alt="github"></footer>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
